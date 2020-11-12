@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script>
+	
+	function myFunction(){
+		document.getElementById("asteptari").innerHTML = "Asteptari: Dobandirea unui job in domeniul IT";
+		document.getElementById("poza").src = "20190716_221925.jpg";document.getElementById("poza").style.opacity = "0.5";
+		
+	}	
+	
+	function arataVarsta() {
+		var azi = new Date;
+		var varstaMea;
+		var anNasc = document.getElementById("varsta").innerHTML;
+		var anCurent = azi.getFullYear();
+		
+		varstaMea = anCurent - anNasc;
+		document.getElementById("varsta").innerHTML = varstaMea;
+		
+	}
+	
+	
+	</script>
+</head>
+	
+	<body id="body">
+		<h1>Prezentare Personala</h1>
+		<p><b>Nume:</b> Dutu</p>
+		<p><b>Prenume:</b> Andrei</p>
+		<p onmouseover="arataVarsta()" id="varsta">2002</p>
+		<p><b>E-mail:</b> andreidutu130@gmail.com</p>
+		<p><b>Telefon:</b> 0775600247</p>
+		<p>Poza:</br><img id="poza" src="IMG_20190624_184315_082.jpg" width="200" height="200"></p>
+		<button onclick="myFunction()">Alta viata</button>
+		<p id="asteptari">Asteptari:Dobandirea unui job in domeniul telecomunicatiilor</p>
+		
+
+<table>
+  <tr>
+    <th>Disciplina</th>
+    <th>An de studiu</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Radiocomunicatii</td>
+    <td>III</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3142.pdf">Fisa de disciplina</a></td>
+  </tr>
+  <tr>
+    <td>Telefonie</td>
+    <td>III</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3138.pdf">Fisa de disciplina</a></td>
+  </tr>
+  <tr>
+    <td>Comunicatii mobile</td>
+    <td>IV</td>
+    <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3147.pdf">Fisa de disciplina</a></td>
+  </tr>
+ 
+</table>
+
+
+		<p class="hobby"><b>Hobby-uri:</b></p>
+	<ul class="hobby">
+		<li class="fotbal">Fotbal</li>
+		<li class="gaming">Gaming</li>
+		<li class="info">Informatica aplicata <3</li>
+	</ul>
+
+</body>
+
+
+
+</htmL>
